@@ -1,0 +1,199 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+}
+
+body {
+        background-color: rgb(126, 103, 103);
+        background-image: url("./bg_21.png");
+        background-position-y: 40px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+}
+
+.return{
+        padding: 20px;
+        position: relative;
+        text-align: end;
+}
+
+
+.title {
+        position: static;
+        color:rgba(0, 0, 0, 0.781);
+        text-align: center;
+        font-family: fantasy;
+        border: 4px solid #31373a;
+        background-color: rgba(255, 255, 255, 0.87);
+}
+
+.score-board{
+        margin: 20px auto;
+        border: 3px solid white;
+        width: 200px;
+        color: white;
+        background-color: rgba(11, 126, 126, 0.5);
+        font-size: 45px;
+        text-shadow: -1px 2px 0 rgb(0, 0, 0);
+        border-radius: 4px;
+        text-align: center;
+        padding: 15px 20px;
+        font-family: sans-serif;
+        position: relative;
+}
+
+.badge{
+        background-color: rgba(247, 42, 6, 0.959);
+        border-radius: 10%;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        padding: 2px 2px;
+        width: 50px;
+
+}
+
+#user-label{
+        position: absolute;
+        top: 30px;
+        left: -30px;
+}
+
+
+#comp-label{
+        position: absolute;
+        top: 30px;
+        right: -30px;
+}
+
+#action-prompt{
+        color:rgba(0, 0, 0, 0.781);
+        text-align: center;
+        font-family: fantasy;
+        border: 5px outset rgb(126, 103, 103);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.87);
+        width: 400px;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
+}
+
+
+
+.choices{
+        margin: 20px 0 10px 0;
+        text-align: center;
+}
+
+.choice {
+        background-image: linear-gradient(to bottom right, rgb(126, 103, 103), rgba(211, 95, 0, 0.753), rgba(155, 90, 30, 0.9),rgba(211, 95, 0, 0.753));
+        display: inline-block;
+        border: 4mm ridge rgba(98, 99, 54, 0.89);
+        border-radius: 50%;
+        padding: 10px;
+        margin: 0 10px;
+        transition: background 0.3s ease;
+}
+
+.choice:hover{
+        cursor: grab;
+        background-image: linear-gradient(to bottom right, rgb(184, 145, 145), rgba(255, 115, 0, 0.753), rgba(224, 133, 47, 0.9),rgba(255, 115, 0, 0.753));
+}
+
+
+
+
+
+.output{
+
+        border-radius: 50%;
+        text-align: center;
+}
+
+.output > p{
+        color:rgba(0, 0, 0, 0.781);
+        text-align: center;
+        font-family: fantasy;
+        border: 5px outset rgb(126, 103, 103);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.87);
+        width: 100px;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;}
+
+#output-user{
+        background-image: linear-gradient(to top left, rgb(126, 103, 103), rgba(211, 95, 0, 0.753), rgba(155, 90, 30, 0.9),rgba(211, 95, 0, 0.753));
+        border: 3mm outset rgb(98, 99, 54);
+        display: inline-block;
+        padding: 10px;
+        margin: 0 10px;
+}
+
+#output-comp{
+        background-image: linear-gradient(to top left, rgb(126, 103, 103), rgba(211, 95, 0, 0.753), rgba(155, 90, 30, 0.9),rgba(211, 95, 0, 0.753));
+        border: 3mm outset rgb(98, 99, 54);
+        display: inline-block;
+        padding: 10px;
+        margin: 0 10px;
+}
+
+.result{
+        font-size: 40px;
+        margin: 10px auto;
+        border: 2mm outset rgba(0, 47, 255, 0.534);
+        box-shadow: 0 0 0 2mm rgba(135, 207, 235, 0.568);
+        border-radius: 12px;
+        color: white;
+        text-shadow: -1px 2px 0 rgb(0, 0, 0);
+        background-color: rgba(11, 190, 190, 0.5);
+        width: 500px;
+        height: 120px;
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+}
+
+.green-glow{
+        border: 4mm ridge #47d17cd5 !important;
+        box-shadow: 0 0 20px #3cac44d3 !important;
+        background-color: rgba(1, 255, 149, 0.432);
+}
+
+.red-glow{
+        border: 4mm ridge #ff1b23d7 !important;
+        box-shadow: 0 0 10px #ca1f22d8 !important;
+        background-color: rgba(255, 8, 8, 0.452);
+}
+
+.grey-glow{
+        border: 4mm ridge #49494dd7 !important;
+        box-shadow: 0 0 10px #31373ad2 !important;
+        background-color: rgba(94, 94, 94, 0.616);
+}
+
+.green-glow-res{
+        border: 3mm outset #39a161d5 !important;
+        box-shadow: 0 0 20px #3cac44d3 !important;
+        background-color: rgba(1, 255, 149, 0.432);
+}
+
+.red-glow-res{
+        border: 3mm outset #b1161bd7 !important;
+        box-shadow: 0 0 10px #ca1f22d8 !important;
+        background-color: rgba(255, 8, 8, 0.452);
+}
+
+.grey-glow-res{
+        border: 3mm outset #49494dd7 !important;
+        box-shadow: 0 0 10px #31373ad2 !important;
+        background-color: rgba(94, 94, 94, 0.616);
+}
+
+
+
+
