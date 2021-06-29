@@ -143,7 +143,7 @@ body {
 }
 
 .result{
-        font-size: 40px;
+        font-size: 2.2rem;
         margin: 10px auto;
         border: 2mm outset rgba(0, 47, 255, 0.534);
         box-shadow: 0 0 0 2mm rgba(135, 207, 235, 0.568);
@@ -151,8 +151,8 @@ body {
         color: white;
         text-shadow: -1px 2px 0 rgb(0, 0, 0);
         background-color: rgba(11, 190, 190, 0.5);
-        width: 500px;
-        height: 120px;
+        width: 85%;
+        height:fit-content;
         text-align: center;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: bold;
